@@ -1,0 +1,315 @@
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (1,'Kielce','25-443');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (2,'Kielce','25-400');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (3,'Kielce','25-970');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (4,'Kielce','25-441');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (5,'Sedziszow','21-632');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (6,'Kielce','20-003');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (7,'Kielce','25-111');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (8,'Kielce','25-425');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (9,'Krakow','21-337');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (10,'Warszawa','25-443');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (11,'Kielce','24-463');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (12,'Morawica','29-453');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (13,'Czestochowa','09-443');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (14,'Strawczyn','25-333');
+INSERT INTO miejscowosc (id_miejsco,nazwa,kod_pocztowy) VALUES (15,'Wroclaw','25-003');
+
+
+
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (1,'Gemini','Starogorska',45,567869321,3,3,1);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (2,'Gemini','OrlatLwowskich',41,567869475,2,2,2);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (3,'Gemini','Wapiennikowa',14,123785321,2,2,3);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (4,'Gemini','Zasciankowa',89,789654123,1,1,4);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (5,'Gemini','Polna',10,567000669,1,1,5);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (6,'Gemini','Wiejska',35,741669325,1,2,6);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (7,'Gemini','Opolska',22,567169741,2,1,7);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (8,'Gemini','Sikorskiego',19,852963321,2,2,8);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (9,'Gemini','Warszawska',8,889632123,2,2,9);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (10,'Gemini','Radomska',56,786357964,3,3,10);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (11,'Gemini','Palmowa',22,444869744,2,1,11);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (12,'Gemini','Wolinska',13,552998321,1,1,12);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (13,'Gemini','Zagorska',3,567111888,2,2,13);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (14,'Gemini','Zagorska',45,741258998,2,2,14);
+INSERT INTO apteka (id_apteka,nazwa,ulica,numer,telefon,iloscstanowisk,iloscpracownikow,miejscowosc_id_miejsco)
+VALUES (15,'Gemini','Niebieska',66,567869456,2,2,15);
+
+
+
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (1,'Wioletta','Laska','Kobieta');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (2,'Anna','Mazor','Kobieta');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (3,'Pawel','Sacha','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (4,'Bartosz','Rys','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (5,'Ricardo','Milos','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (6,'Mateusz','Pacak','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (7,'Wiktoria','Sikora','Kobieta');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (8,'Piotrek','Rownicki','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (9,'Angelina','Jolie','Kobieta');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (10,'Pamela','Anderson','Kobieta');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (11,'Darek','Szumielewicz','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (12,'Jacek','Wacek','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (13,'Aleksandra','Rutczynska','Kobieta');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (14,'Szymon','Blacha','Mezczyzna');
+INSERT INTO farmaceuta (id_farm,imie,nazwisko,plec) VALUES (15,'Halyna','Kiepska','Kobieta');
+
+
+
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (1,'Phiser','Warszawa ul.Zagnaska 4','456325897','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (2,'AstraZeneca','Kielce Duza 3','756321586','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (3,'Farmacol','Jedrzejow 45A','365745891','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (4,'Adamed','Wroclaw ul.Biskupia 4A','452365896','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (5,'Mercator','Krakow ul.Wawelska 44','154456258','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (6,'Biofarm','Berlin ul.StraBe 12','852741147','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (7,'Biomed','NewYork Longstreet 465','753951456','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (8,'Cormay','Warszawa ul.Stara 52B','895475621','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (9,'Cefarm','Sandomierz ul.Bogata 4','895632167','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (10,'Adiuvo','Kielce ul.Mala 5A','752159654','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (11,'Vertex','Radom ul.Wiejska 45A','789658749','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (12,'Ipsen','Warszawa ul.Waska 89B','859738521','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (13,'Endo','Krakow ul.Klawa 56','852525859','Nie');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (14,'Biogen','Szczecin ul.Kocia 90','981325894','Tak');
+INSERT INTO produc (id_prod,nazwa_producenta,adres_firmy,telefon,produkt_krajowy) VALUES (15,'AstellasPharma','Kielce ul.Sowicka 673','452145159','Nie');
+
+
+
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(1,'Pawel','Kaczmarek',456765890,'Mezczyzna',15,1);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(2,'Anna','Ciosek',234543567,'Kobieta',12,2);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(3,'Sylwia','Mazur',890987485,'Kobieta',6,3);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(4,'Natalia','Waza',216890376,'Kobieta',3,4);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(5,'Wanda','Pacak',523963874,'Kobieta',18,5);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(6,'Janusz','Tracz',366990456,'Mezczyzna',8,6);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(7,'Pawel','Salomon',567901123,'Mezczyzna',4,7);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(8,'Dominik','Sacha',489009678,'Mezczyzna',1,8);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(9,'Julia','Wieniawa',525456669,'Kobieta',5,9);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(10,'Jowita','Gruszka',900776543,'Kobieta',3,10);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(11,'Paulina','Frankowska',678984120,'Kobieta',13,11);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(12,'Marian','Okrasa',421452698,'Mezczyzna',4,12);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(13,'Stasiek','Blicharski',452136978,'Mezczyzna',8,13);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(14,'Wiktor','Sikora',698743816,'Mezczyzna',1,14);
+INSERT INTO doktor (id_doktor,imie,nazwisko,telefon,plec,lata_pracy,miejscowosc_id_miejsco)
+VALUES(15,'Pablo','Escobar',698743000,'Mezczyzna',20,15);
+
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (1,'Bartosz','Kot',0056748975,21,1);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (2,'Lew','Karbowiak',69100431077,25,2);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (3,'Izolda','Kobiela',71101727066,56,3);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (4,'Teofila','Adamek',73030610422,52,4);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (5,'Euzebia','Opalicki',59111973763,44,5);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (6,'Klaudia','Sznajder',61122376743,17,6);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (7,'Olaf','Rogowski',97121226598,26,7);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (8,'Zduńczyk','Zarzycki',77030840690,46,8);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (9,'Zygmunt','Cholewa',70090830755,66,9);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (10,'Bazylid','Karpowicz',83061591124,100,10);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (11,'Klemens','Dziedzic',78122183426,23,11);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (12,'Oliwia','Ulatowski',82042384748,29,12);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (13,'Kajetan','Szyszka',95041655643,46,13);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (14,'Honoryna','Tarasiuk',95031562874,69,14);
+INSERT INTO pacjent (id_pacjent,imie,nazwisko,pesel,wiek,miejscowosc_id_miejsco)
+VALUES (15,'Jonasz','Makowski',85020756108,35,15);
+
+
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (1,'Ibuprom',3,20.30,'3 tabletki na dzien',1);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (2,'Apap',1,9.45,'5 tabletek na dzien',2);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (3,'Herbitusin',1,15.99,'10 tabletek na 6 godzin',3);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (4,'Desnoran',2,30.30,'2 tabletki na dzien',4);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (5,'Magnez B5',1,20.40,'1 tabletka na dzien',5);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (6,'Acard',2,40.05,'3 tabletki na dzien',6);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (7,'Bisocard',1,20.20,'2 tabletki na dzien',7);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (8,'Ibum',2,15.99,'2 tabletki na dzien',8);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (9,'Ibufen MAX',1,21.42,'1 tabletka na dzien',9);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (10,'Etopiryna',2,30.56,'2 tabletki na dzien',10);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (11,'Rutinoscorbin',3,25.46,'3 tabletki na dzien',11);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (12,'Flavamed',1,35.25,'2 tabletki na dzien',12);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (13,'Deflegmin',1,45.20,'1 tabletka na 20 h',13);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (14,'Telfexo',2,24.36,'2 tabletki na dzien',14);
+INSERT INTO lek (id_lek,nazwa,ilosc_opako,cena,dawka_tabletek,produc_id_prod)
+VALUES (15,'Aspiryna',1,36.99,'4 tabletki na dzien',15);
+
+
+
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (1,3,1);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (2,1,2);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (3,4,3);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (4,2,4);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (5,1,5);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (6,1,6);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (7,2,7);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (8,1,8);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (9,3,9);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (10,6,10);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (11,4,11);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (12,2,12);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (13,1,13);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (14,2,14);
+INSERT INTO listalekow (id_listalekow,ilosc,lek_id_lek) VALUES (15,2,15);
+
+
+
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (1,DATE'2021-01-26','Tak','Nie',1,1,1,1);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (2,DATE'2020-01-02','Tak','Nie',1,1,2,2);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (3,DATE'2020-05-01','Nie','Tak',1,1,3,1);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (4,DATE'2020-06-09','Tak','Nie',2,3,1,3);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (5,DATE'2020-11-04','Nie','Tak',1,1,4,1);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (6,DATE'2020-11-09','Tak','Nie',2,2,5,3);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (7,DATE'2020-12-06','Nie','Tak',3,4,3,3);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (8,DATE'2020-12-15','Nie','Tak',3,2,3,2);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (9,DATE'2020-12-24','Tak','Nie',4,3,2,4);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (10,DATE'2019-06-09','Nie','Tak',2,3,4,1);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (11,DATE'2019-07-09','Tak','Nie',2,4,2,1);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (12,DATE'2019-08-25','Nie','Tak',5,5,5,4);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (13,DATE'2019-10-06','Tak','Nie',4,2,3,5);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (14,DATE'2018-05-29','Nie','Tak',5,3,5,3);
+INSERT INTO recepta (id_recepta,data_wystaw,e_recepta,recepta_papierowa,doktor_id_doktor,pacjent_id_pacjent,farmaceuta_id_farm,listalekow_id_listalekow)
+VALUES (15,DATE'2018-12-25','Tak','Nie',3,6,2,1);
+
+
+
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(1,DATE'2022-12-25','Nie','Nie',6,1);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(2,DATE'2022-11-05','Nie','Nie',7,1);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(3,DATE'2021-12-24','Nie','Nie',6,2);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(4,DATE'2021-07-12','Nie','Nie',6,3);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(5,DATE'2021-06-22','Nie','Nie',7,1);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(6,DATE'2021-08-27','Nie','Nie',6,4);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(7,DATE'2021-05-18','Nie','Nie',8,2);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(8,DATE'2021-04-20','Nie','Nie',7,2);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(9,DATE'2021-02-01','Nie','Nie',7,1);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(10,DATE'2020-12-29','Nie','Nie',9,3);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(11,DATE'2020-11-24','Nie','Nie',8,3);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(12,DATE'2020-06-10','Nie','Nie',6,2);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(13,DATE'2019-04-16','Nie','Nie',10,2);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(14,DATE'2019-01-12','Nie','Nie',8,4);
+INSERT INTO bez_recepty (id_bezr,data_wystaw,e_recepta,recepta_papierowa,listalekow_id_listalekow,farmaceuta_id_farm)
+VALUES(15,DATE'2019-01-09','Nie','Nie',6,4);
+
+
+
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (1,1,2,1);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (2,2,1,2);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (3,3,1,3);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (4,4,1,2);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (5,5,3,4);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (6,6,2,5);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (7,7,3,6);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (8,8,2,3);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (9,9,2,4);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (10,10,3,5);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (11,11,1,6);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (12,12,1,1);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (13,13,1,1);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (14,14,4,4);
+INSERT INTO stanowisko (id_stanow,numer_stanowiska,max_osob,farmaceuta_id_farm) VALUES (15,15,4,5);
+
+
+
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (1,'Kapsulki do polkniecia','Tak','Tak','W temp. do 5 stopni',1); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (2,'Kapsulki do polkniecia','Nie','Tak','W kazdych warunkach',2); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (3,'Syrop','Tak','Tak','W temp. do 5 stopni',3); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (4,'Kapsulki do polkniecia','Nie','Tak','W temp. do 5 stopni',4); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (5,'Kapsulki do polkniecia','Nie','Tak','W temp. do 5 stopni',5); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (6,'Kapsulki do polkniecia','Tak','Nie','W temp. do 5 stopni',6); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (7,'Czopki','Nie','Tak','W temp. do 5 stopni',7); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (8,'Kapsulki do polkniecia','Tak','Nie','W kazdych warunkach',8); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (9,'Kapsulki do ssania','Nie','Tak','W temp. do 5 stopni',9); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (10,'Kapsulki do polkniecia','Tak','Tak','W kazdych warunkach',10); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (11,'Kapsulki do polkniecia','Nie','Tak','W temp. do 5 stopni',11); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (12,'Kapsulki do ssania','Tak','Tak','W temp. do 5 stopni',12); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (13,'Kapsulki do polkniecia','Nie','Tak','W kazdych warunkach',13); 
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (14,'Syrop','Tak','Nie','W temp. do 5 stopni',14);
+INSERT INTO typ_leku (id_typleku,forma,dla_dzieci,dla_doroslych,przechowanie,lek_id_lek)
+VALUES (15,'Czopki','Tak','Nie','W kazdych warunkach',15); 
