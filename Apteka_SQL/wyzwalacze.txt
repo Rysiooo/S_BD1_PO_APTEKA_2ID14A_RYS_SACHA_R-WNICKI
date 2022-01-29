@@ -1,0 +1,78 @@
+----------------------------------Wyzwalacze DML-----------------------------------------------
+---------1 tworzy nową tabelę zawierającą historię dodawania, edycji bądź usunięcia pacjęta z bazy
+/
+CREATE OR REPLACE TRIGGER nowy_pacjent
+AFTER INSERT OR UPDATE OR DELETE ON pacjent
+FOR EACH ROW
+BEGIN
+IF INSERTING THEN
+INSERT INTO pacjent_kopia VALUES (SYSDATE, 'Dodano nowego pacjenta nr ' :NEW.id_pacjent);
+ELSE IF UPDATING THEN
+INSERT INTO pacjent_kopia VALUES (SYSDATE, 'Zmieniono dane pacjenta nr ' :NEW.id_pacjent);
+ELSE IF DELETING THEN
+INSERT INTO pacjent_kopia VALUES (SYSDATE, 'Usunieto pacjenta nr ' :OLD.id_pacjent);
+END IF;
+END;
+/
+
+INSERT INTO pacjent VALUES(16, 'Jan', 'Masny', '95345678219', 12, 9);
+UPDATE pacjent SET wiek=13 WHERE id_pacjent=16;
+DELETE FROM pacjent WHERE id_pacjent = 16;
+
+SELECT *FROM pacjent;
+SELECT *FROM pacjent_kopia;
+
+--------------------------------------------------------------------
+---------2 tworzy nową tabelę zawierającą historię dodawania, edycji bądź usunięcia danego leku z bazy
+/
+CREATE OR REPLACE TRIGGER nowy_lek
+AFTER INSERT OR UPDATE OR DELETE ON lek;
+FOR EACH ROW
+BEGIN
+IF INSERTING THEN
+INSERT INTO lek_kopia (id_lek, nazwa, ilosc_opako, cena, dawka_tabletek, produc_id_prod)
+VALUES (:NEW.id_lek, :NEW.nazwa, :NEW.ilosc_opako, :NEW.cena, :NEW.dawka_tabletek, :NEW.produc_id_prod);
+ELSE IF UPDATING THEN
+UPDATE lek_kopia
+SET id_lek=:NEW.id_lek, nazwa=:NEW.nazwa, ilosc_opako=:NEW.ilosc_opako, cena=:NEW.cena, dawka_tabletek=:NEW.dawka_tabletek, produc_id_prod=:NEW.produc_id_prod
+WHERE id_lek=:NEW.id_lek;
+ELSE IF DELETING THEN
+DELETE FROM lek_kopia
+WHERE id_lek=:NEW.id_lek;
+END IF;
+END;
+/
+
+INSERT INTO lek VALUES(16, 'Gripex', 1, 8.99, '3 tabletki na dzien', 7);
+UPDATE lek SET ilosc_opako = 3 WHERE ilosc_opako <= 1;
+DELETE FROM lek WHERE id_lek = 16;
+
+SELECT *FROM lek;
+SELECT *FROM lek_kopia;
+----------------------------------------------------------------------
+---------3 tworzy nową tabelę zawierającą historię dodawania, edycji bądź usunięcia recepty z bazy
+/
+CREATE OR REPLACE TRIGGER nowa_recepta
+AFTER INSERT OR UPDATE OR DELETE ON recepta;
+FOR EACH ROW
+BEGIN
+IF INSERTING THEN
+INSERT INTO recepta_kopia (id_recepta, data_wystaw, e_recepta, recepta_papierowa, doktor_id_doktor, pacjent_id_pacjent, farmaceuta_id_farm, listalekow_id_listalekow)
+VALUES (:NEW.id_recepta, :NEW.data_wystaw, :NEW.e_recepta, :NEW.recepta_papierowa, :NEW.doktor_id_doktor, :NEW.pacjent_id_pacjent, :NEW.farmaceuta_id_farm, :NEW.listalekow_id_listalekow);
+ELSE IF UPDATING THEN
+UPDATE recepta_kopia
+SET id_recepta=:NEW.id_recepta, data_wystaw=:NEW.data_wystaw, e_recepta=:NEW.e_recepta, recepta_papierowa=:NEW.recepta_papierowa, doktor_id_doktor=:NEW.doktor_id_doktor, pacjent_id_pacjent=:NEW.pacjent_id_pacjent, farmaceuta_id_farm=:NEW.farmaceuta_id_farm, listalekow_id_listalekow=:NEW.listalekow_id_listalekow
+WHERE id_recepta=:NEW.id_recepta;
+ELSE IF DELETING THEN
+DELETE FROM recepta_kopia
+WHERE id_recepta=:NEW.id_recepta;
+END IF;
+END;
+/
+
+INSERT INTO recepta VALUES(16, DATE'2021-01-16', 'Tak', 'Nie', 5, 4, 7, 2);
+UPDATE recepta SET doktor_id_doktor = 6 WHERE id_recepta data_wystaw >= '2019-12-12' AND data_wystaw < '2021-01-01';
+DELETE FROM recepta WHERE id_recepta data_wystaw >= '2018-01-101' AND data_wystaw < '2019-01-01';
+
+SELECT *FROM recepta;
+SELECT *FROM recepta_kopia;

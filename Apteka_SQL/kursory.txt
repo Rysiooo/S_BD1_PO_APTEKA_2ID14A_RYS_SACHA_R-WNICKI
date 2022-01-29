@@ -1,0 +1,76 @@
+-----------------------------------Kursory---------------------------------
+----------1 wyświetla niepełnoletnich pacjentów
+CREATE OR REPLACE PROCEDURE proccur()
+BEGIN
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE a INT;
+    DECLARE dzieci CURSOR FOR SELECT wiek FROM pacjent;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    OPEN dzieci;
+    
+    REPEAT FETCH dzieci INTO a;
+        IF a < 18 THEN
+            DBMS_OUTPUT.PUT_LINE(imie, nazwisko, wiek, pesel);
+        END IF;
+    UNTIL done END REPEAT;
+    
+    CLOSE dzieci;
+END;
+---------------------------------------------------------------
+----------2 wyświetla specjalistów
+CREATE OR REPLACE PROCEDURE proccur()
+BEGIN
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE a INT;
+    DECLARE specjalisci CURSOR FOR SELECT lata_pracy FROM doktor;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    OPEN specjalisci;
+    REPEAT FETCH specjalisci INTO a;
+        IF a >= 15 THEN
+            DBMS_OUTPUT.PUT_LINE(imie, nazwisko, staz);
+        END IF;
+    UNTIL done END REPEAT;
+    
+    CLOSE specjalisci;
+END;
+---------------------------------------------------------------
+----------3 wyświetla ilosc recept wystawionych w ciągu ostatniego roku
+CREATE OR REPLACE FUNCTION ilosc_rec
+RETURN NUMBER
+IS
+ilosc NUMBER;
+temp NUMBER(9);
+CURSOR il_rec IS
+SELECT id_recepta FROM recepta
+WHERE data_wystaw BETWEEN SYSDATE AND SYSDATE - 365;
+BEGIN 
+ilosc =: 0;
+FOR ITER IN ilosc_rec LOOP
+ilosc =: ilosc + 1;
+END LOOP;
+RETURN ilosc;
+END;
+/
+COMMIT;
+
+SELECT ilosc_rec() FROM dual;
+---------------------------------------------------------------
+----------4 wyświetla ilosc posiadanych leków
+CREATE OR REPLACE FUNCTION ilosc_lakarstw
+RETURN NUMBER
+IS
+ilosc NUMBER;
+temp NUMBER(9);
+CURSOR il_lek IS
+SELECT id_lek FROM recepta;
+BEGIN 
+ilosc =: 0;
+FOR ITER IN ilosc_lek LOOP
+ilosc =: ilosc + 1;
+END LOOP;
+RETURN ilosc;
+END;
+/
+COMMIT;
+
+SELECT ilosc_lek() FROM dual;

@@ -1,0 +1,51 @@
+DROP VIEW apteki;
+DROP VIEW leki;
+DROP VIEW pracownicy;
+DROP VIEW recepty;
+DROP VIEW leki_bez_recepty;
+----------------------------------------------------------------------------
+---------1 Tworzy widok aptek z ich adresami oraz danymi kontaktowymi
+CREATE VIEW apteki AS
+SELECT apteka.nazwa, apteka.ulica, apteka.numer, miejscowosc.nazwa AS miasto, miejscowosc.kod_pocztowy, apteka.telefon
+FROM apteka
+JOIN miejscowosc ON apteka.id_apteka=miejscowosc.id_miejsco;
+
+SELECT *FROM apteki;
+----------------------------------------------------------------------------
+----------2 Tworzy widok leków z ich opisem
+CREATE VIEW leki AS
+SELECT lek.nazwa, produc.nazwa_producenta, typ_leku.forma, typ_leku.dla_dzieci, typ_leku.dla_doroslych, lek.cena
+FROM typ_leku
+JOIN lek ON typ_leku.id_typleku=lek.id_lek
+JOIN produc ON lek.id_lek=produc.id_prod;
+
+SELECT *FROM leki;
+----------------------------------------------------------------------------
+----------3 Tworzy widok zatrudnionych farmaceutów w aptece 
+CREATE VIEW pracownicy AS
+SELECT farmaceuta.imie, farmaceuta.nazwisko, stanowisko.numer_stanowiska
+FROM stanowisko
+JOIN farmaceuta ON stanowisko.id_stanow=farmaceuta.id_farm;
+
+SELECT *FROM pracownicy;
+----------------------------------------------------------------------------
+-----------4 Tworzy widok wszystkich dostępnych recept
+CREATE VIEW recepty AS
+SELECT recepta.id_recepta, pacjent.imie AS imie_pacjenta, pacjent.nazwisko AS nazwisko_pacjenta, pacjent.wiek, pacjent.pesel, doktor.imie AS imie_lekarza, doktor.nazwisko AS nazwisko_lekarza, recepta.data_wystaw
+FROM recepta
+JOIN pacjent ON recepta.id_recepta=pacjent.id_pacjent
+JOIN doktor ON recepta.id_recepta=doktor.id_doktor;
+
+SELECT *FROM recepty;
+----------------------------------------------------------------------------
+-----------5 Tworzy widok wszytskich leków bez recepty
+CREATE VIEW leki_bez_recepty AS
+SELECT id_bezr, data_wystaw, e_recepta, recepta_papierowa FROM bez_recepty;
+
+SELECT *FROM leki_bez_recepty;
+----------------------------------------------------------------------------
+-----------6 Tworzy widok producentów leków
+CREATE VIEW producenci_lekow AS
+SELECT id_prod, nazwa_producenta, adres_firmy, telefon, produkt_krajowy FROM produc;
+
+SELECT *FROM producenci_lekow;
